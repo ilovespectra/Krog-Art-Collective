@@ -27,7 +27,7 @@ export default function DonatePage() {
     e.preventDefault();
 
     if (!donorName || !donorEmail || !donorPhone) {
-      setMessage(t('donate.fillRequired'));
+      setMessage(Array.isArray(t('donate.fillRequired')) ? t('donate.fillRequired')[0] : t('donate.fillRequired'));
       return;
     }
 
