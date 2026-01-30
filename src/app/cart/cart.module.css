@@ -1,0 +1,358 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+:global(.dark) .container {
+  background: #0a0a0a;
+}
+
+.wrapper {
+  max-width: 88rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+:global(.dark) .title {
+  color: #fff;
+}
+
+.emptyWrapper {
+  text-align: center;
+  padding: 3rem;
+}
+
+.emptyIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.emptyTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .emptyTitle {
+  color: #fff;
+}
+
+.emptyLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+:global(.dark) .emptyLink {
+  background: #fff;
+  color: #000;
+}
+
+.emptyLink:hover {
+  background: #222;
+}
+
+:global(.dark) .emptyLink:hover {
+  background: #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.itemsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .itemsSection {
+    grid-column: span 2;
+  }
+}
+
+.cartItem {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+:global(.dark) .cartItem {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111;
+}
+
+:global(.dark) .itemName {
+  color: #fff;
+}
+
+.itemPrice {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+:global(.dark) .itemPrice {
+  color: #999;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantityButton {
+  padding: 0.5rem;
+  background: #e5e5e5;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+:global(.dark) .quantityButton {
+  background: #333;
+  color: #fff;
+}
+
+.quantityButton:hover {
+  background: #ccc;
+}
+
+:global(.dark) .quantityButton:hover {
+  background: #444;
+}
+
+.quantityValue {
+  width: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.itemTotal {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #a78bfa;
+  width: 6rem;
+  text-align: right;
+}
+
+:global(.dark) .itemTotal {
+  color: #c4b5fd;
+}
+
+.removeButton {
+  color: #dc2626;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+:global(.dark) .removeButton {
+  color: #ef4444;
+}
+
+.removeButton:hover {
+  color: #991b1b;
+}
+
+:global(.dark) .removeButton:hover {
+  color: #fca5a5;
+}
+
+.summary {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: sticky;
+  top: 5rem;
+}
+
+:global(.dark) .summary {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.summaryTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+:global(.dark) .summaryTitle {
+  color: #fff;
+}
+
+.summaryDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+:global(.dark) .summaryDetails {
+  border-bottom-color: #333;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+}
+
+:global(.dark) .summaryRow {
+  color: #ccc;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+:global(.dark) .summaryTotal {
+  color: #fff;
+}
+
+.totalPrice {
+  color: #a78bfa;
+}
+
+:global(.dark) .totalPrice {
+  color: #c4b5fd;
+}
+
+.checkoutButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.2s;
+}
+
+:global(.dark) .checkoutButton {
+  background: #fff;
+  color: #000;
+}
+
+.checkoutButton:hover {
+  background: #222;
+}
+
+:global(.dark) .checkoutButton:hover {
+  background: #ddd;
+}
+
+.continueLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem;
+  background: #f3f3f3;
+  color: #000;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+:global(.dark) .continueLink {
+  background: #333;
+  color: #fff;
+}
+
+.continueLink:hover {
+  background: #e0e0e0;
+}
+
+:global(.dark) .continueLink:hover {
+  background: #444;
+}
+
+.clearButton {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+:global(.dark) .clearButton {
+  color: #ef4444;
+}
+
+.clearButton:hover {
+  color: #991b1b;
+}
+
+:global(.dark) .clearButton:hover {
+  color: #fca5a5;
+}

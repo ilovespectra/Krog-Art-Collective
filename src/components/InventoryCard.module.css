@@ -1,0 +1,196 @@
+.card {
+  background: #f5f1e8;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e8dcc8;
+}
+
+:global(.dark) .card {
+  background: #2c2416;
+  border-color: #5a4a3a;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(212, 105, 61, 0.12);
+  transform: translateY(-2px);
+}
+
+:global(.dark) .card:hover {
+  box-shadow: 0 4px 16px rgba(232, 149, 106, 0.12);
+}
+
+.image {
+  height: 12rem;
+  background: linear-gradient(135deg, #e8dcc8 0%, #d4c8b8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+
+:global(.dark) .image {
+  background: linear-gradient(135deg, #5a4a3a 0%, #3a2f28 100%);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  font-size: 2.25rem;
+  opacity: 0.5;
+}
+
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2c2416;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+:global(.dark) .title {
+  color: #ede8e0;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #5a4a3a;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+:global(.dark) .description {
+  color: #c4b5a0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  min-height: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.tagExcellent {
+  background: #e8f1e6;
+  color: #2d5a2d;
+}
+
+:global(.dark) .tagExcellent {
+  background: #2d5a2d;
+  color: #e8f1e6;
+}
+
+.tagGood {
+  background: #e8ecf5;
+  color: #2d4a7a;
+}
+
+:global(.dark) .tagGood {
+  background: #2d4a7a;
+  color: #e8ecf5;
+}
+
+.tagFair {
+  background: #f5eddf;
+  color: #8b6a2d;
+}
+
+:global(.dark) .tagFair {
+  background: #8b6a2d;
+  color: #f5eddf;
+}
+
+.tagQuantity {
+  background: #e8f1e6;
+  color: #2d5a2d;
+}
+
+:global(.dark) .tagQuantity {
+  background: #2d5a2d;
+  color: #e8f1e6;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d4693d;
+}
+
+:global(.dark) .price {
+  color: #e8956a;
+}
+
+.addButton {
+  width: 100%;
+  background: #d4693d;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.addButton:hover:not(:disabled) {
+  background: #c25535;
+  transform: translateY(-1px);
+}
+
+:global(.dark) .addButton {
+  background: #e8956a;
+  color: #1a1410;
+}
+
+:global(.dark) .addButton:hover:not(:disabled) {
+  background: #f0a680;
+}
+
+.addButton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}

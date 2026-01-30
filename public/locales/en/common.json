@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "browse": "Browse",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "header": {
+    "title": "Krog Art Collective",
+    "subtitle": "Supporting local artists through donated supplies",
+    "search": "Search supplies...",
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "browse": {
+    "title": "Browse Art Supplies",
+    "categories": {
+      "paints": "Paints & Mediums",
+      "drawing": "Drawing & Marking",
+      "surfaces": "Surfaces & Substrates",
+      "brushes": "Brushes & Application Tools",
+      "specialty": "Specialty Process Supplies"
+    },
+    "filter": "Filter by category",
+    "sort": "Sort by",
+    "price_low": "Price: Low to High",
+    "price_high": "Price: High to Low",
+    "newest": "Newest",
+    "all": "All Supplies"
+  },
+  "search": {
+    "title": "Search Supplies",
+    "semantic": "Search by description or image",
+    "placeholder": "Enter what you're looking for...",
+    "results": "Search Results",
+    "no_results": "No supplies found. Try different keywords."
+  },
+  "item": {
+    "price": "Price",
+    "quantity": "In Stock",
+    "condition": "Condition",
+    "addToCart": "Add to Cart",
+    "donated": "Donated",
+    "category": "Category"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "continue": "Continue Shopping",
+    "remove": "Remove from Cart"
+  },
+  "about": {
+    "title": "About Krog Art Collective",
+    "mission": "Our Mission",
+    "mission_text": "Krog Art Collective is a community-driven initiative founded on the belief that art should be accessible to everyone. We curate gently used art supplies and professional tools, making quality materials affordable for aspiring and established artists of all ages and backgrounds in Ljubljana.",
+    "story": "Our Story",
+    "story_text": "We're immigrants from the United States who fell in love with Slovenia for reasons that run deep: the breathtaking natural landscapes, the vibrant arts culture, and most importantly, a resiliant society that recognizes art and creative expression as central to community life-- where streets are named after poets instead of generals, and where education and art are woven together rather than treated as separate paths. This philosophy resonated with us profoundly and shaped who we are as a collective.",
+    "philosophy": "Our Philosophy",
+    "philosophy_text": "We've always been thrift-oriented, believing in the circular economy and the beauty of gently used things. Our homes and wardrobes are filled with repurposed and thrifted items. We apply this philosophy to art: that quality supplies should continue their journey through many hands, supporting the circle of life. By making affordable, secondhand art materials available, we ensure that creative barriers fall away, and that artists—young and old—have access to the tools they need to express themselves, learn, and grow.",
+    "values": "Our Values",
+    "accessibility": "Accessibility",
+    "accessibility_text": "Art should never be gatekept by price. We believe every person, regardless of background or budget, deserves the opportunity to create. Our affordable prices and diverse inventory remove barriers to artistic exploration.",
+    "sustainability": "Sustainability",
+    "sustainability_text": "We champion the circular economy. By redistributing gently used supplies, we reduce waste, honor the lifecycle of materials, and celebrate the idea that art supplies are meant to be shared, passed on, and used until their potential is fully realized.",
+    "community": "Community Support",
+    "community_text": "A portion of our proceeds are invested back into local art initiatives and community programs. We're not just a store—we're part of Ljubljana's creative ecosystem.",
+    "tools": "Free Tool Access",
+    "tools_text": "We maintain a community tool library where members can borrow professional equipment for creative projects, workshops, and experimentation, making high-value tools available without ownership barriers."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "contact": "Contact us",
+    "address": "Ljubljana, Slovenia",
+    "donate": "Donate Supplies"
+  },
+  "tools": {
+    "title": "Tool Library Booking",
+    "subtitle": "Select up to 3 tools, pick a date and time, then complete your booking",
+    "step1": "Step 1: Select Tools",
+    "step2": "Step 2: Select Date & Time",
+    "selectTools": "Select Tools",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "selectDate": "Booking Date",
+    "continueToDetails": "Continue to Details",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "purpose": "Purpose",
+    "optional": "optional",
+    "back": "Back",
+    "confirmBooking": "Confirm Booking",
+    "completeYourBooking": "Complete Your Booking",
+    "tools": "Tools",
+    "dateTime": "Date & Time",
+    "readyToBook": "Ready to Book?",
+    "howItWorks": "How It Works",
+    "freeMembership": "Free membership required",
+    "bookUpTo3": "Book up to 3 tools per session",
+    "sessions2to4": "Sessions are 2-4 hours",
+    "trainingProvided": "Training provided for complex equipment",
+    "confirmationEmail": "Confirmation email sent immediately",
+    "bookingConfirmed": "Booking confirmed! Check your email for details.",
+    "bookingFailed": "Booking failed",
+    "fillAllFields": "Please fill in all fields",
+    "trainingRequired": "Training required",
+    "availableQty": "Available"
+  }
+}

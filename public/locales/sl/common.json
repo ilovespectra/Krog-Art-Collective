@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "browse": "Brskaj",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "cart": "Košarica"
+  },
+  "header": {
+    "title": "Krog Art Collective",
+    "subtitle": "Podpiranje lokalnih umetnikov s prispevki",
+    "search": "Iskanje zalog...",
+    "language": "Jezik",
+    "theme": "Tema"
+  },
+  "browse": {
+    "title": "Brskaj po Umetniških Zalogah",
+    "categories": {
+      "paints": "Barve in Mediji",
+      "drawing": "Risanje in Označevanje",
+      "surfaces": "Površine in Substrati",
+      "brushes": "Čopiči in Orodja za Nanašanje",
+      "specialty": "Specialne Zaloge za Procese"
+    },
+    "filter": "Filtriraj po kategoriji",
+    "sort": "Razvrsti po",
+    "price_low": "Cena: Od Nizke do Visoke",
+    "price_high": "Cena: Od Visoke do Nizke",
+    "newest": "Najnovije",
+    "all": "Vse Zaloge"
+  },
+  "search": {
+    "title": "Iskanje Zalog",
+    "semantic": "Iskanje po opisu ali sliki",
+    "placeholder": "Vnesite, kaj iščete...",
+    "results": "Rezultati Iskanja",
+    "no_results": "Zaloge ne najdene. Poskusite drugačne ključne besede."
+  },
+  "item": {
+    "price": "Cena",
+    "quantity": "Na Zalogi",
+    "condition": "Stanje",
+    "addToCart": "Dodaj v Košarico",
+    "donated": "Donacijo",
+    "category": "Kategorija"
+  },
+  "cart": {
+    "title": "Nakupna Košarica",
+    "empty": "Vaša košarica je prazna",
+    "total": "Skupaj",
+    "checkout": "Nadaljuj s Plačilom",
+    "continue": "Nadaljuj s Nakupovanjem",
+    "remove": "Odstrani iz Košarice"
+  },
+  "about": {
+    "title": "O Krog Art Collective",
+    "mission": "Naša Misija",
+    "mission_text": "Krog Art Collective je iniciativa, vodena s skupnostjo in osnovana na prepričanju, da bi morala biti umetnost dostopna vsem. Kuriramo rahlo uporabljene umetniške zaloge in profesionalna orodja, kar omogoča dostopne materiale za rajočne in uveljavljene umetnike vseh starosti in okolij v Ljubljani.",
+    "story": "Naša Zgodba",
+    "story_text": "Smo imigranti iz Združenih držav, ki smo se navdušili nad Slovenijo iz globokih razlogov: čudovite naravne krajine, živahna umetnostna kultura, in še posebej družba, ki prepoznava pesništvo in umetnost kot osrednji del skupnostnega življenja—kjer so ulice poimenovane po pesmih namesto generalov, in kjer so izobraževanje in umetniški izraz prepleteni namesto ločeni. Ta filozofija nas je globoko navdahnila in oblikovala tisto, kar smo kot kolektiv.",
+    "philosophy": "Naša Filozofija",
+    "philosophy_text": "Smo vedno bili usmerjeni v thrift—verujemo v krožno ekonomijo in lepoto rahlo uporabljenih stvari. To filozofijo uporabljamo na umetnost: da bi morale kakovostne zaloge nadaljevati svoje potovanje skozi mnoge roke, podprto s krogom življenja. Z dostopnostjo rabljenih umetniških materialov zagotavljamo, da padejo ustvarjalne ovire, in da imajo umetniki—mladi in stari—dostop do orodij, ki jih potrebujejo za izražanje, učenje in rast.",
+    "values": "Naše Vrednosti",
+    "accessibility": "Dostopnost",
+    "accessibility_text": "Umetnost ne sme biti omejena s ceno. Verjamemo, da si vsi ljudje, ne glede na ozadje ali proračun, zaslužijo priložnost za ustvarjanje. Naše dostopne cene in raznolik izbor odpravljajo ovire za umetniško raziskovanje.",
+    "sustainability": "Trajnost",
+    "sustainability_text": "Podpiramo krožno ekonomijo. S ponovno distribucijo rahlo uporabljenih zalog zmanjšujemo odpadke, spoštujemo življenjski cikel materialov in praznujemo idejo, da bi morale biti umetniške zaloge deljene, prepuščene in uporabljene, dokler njihov potencial ni v celoti uresničen.",
+    "community": "Podpora Skupnosti",
+    "community_text": "Del našega dohodka vlagamo v lokalne umetnostne iniciative in skupnostne programe. Nismo samo trgovina—smo del ustvarjalnega ekosistema Ljubljane.",
+    "tools": "Brezplačen Dostop do Orodij",
+    "tools_text": "Vzdrževamo skupnostno knjižnico orodij, kjer člani lahko izposodijo profesionalna orodja za ustvarjalne projekte, delavnice in poskuse, kar omogoča visoko vredna orodja brez lastniških ovir."
+  },
+  "footer": {
+    "rights": "Vse pravice pridržane",
+    "contact": "Kontaktirajte nas",
+    "address": "Ljubljana, Slovenija",
+    "donate": "Donacija Zalog"
+  },
+  "tools": {
+    "title": "Rezervacija Knjižnice Orodij",
+    "subtitle": "Izberite do 3 orodja, izberite datum in čas, nato dokončajte rezervacijo",
+    "step1": "Korak 1: Izbira Orodij",
+    "step2": "Korak 2: Izbira Datuma in Časa",
+    "selectTools": "Izbira Orodij",
+    "startTime": "Čas Začetka",
+    "endTime": "Čas Konca",
+    "selectDate": "Datum Rezervacije",
+    "continueToDetails": "Nadaljuj s Podrobnostmi",
+    "name": "Ime",
+    "email": "E-pošta",
+    "phone": "Telefon",
+    "purpose": "Namen",
+    "optional": "izbirno",
+    "back": "Nazaj",
+    "confirmBooking": "Potrdi Rezervacijo",
+    "completeYourBooking": "Dokončaj Svojo Rezervacijo",
+    "tools": "Orodja",
+    "dateTime": "Datum in Čas",
+    "readyToBook": "Pripravljen za Rezervacijo?",
+    "howItWorks": "Kako Deluje",
+    "freeMembership": "Brezplačna članarina",
+    "bookUpTo3": "Rezerviraj do 3 orodja na sejo",
+    "sessions2to4": "Seje so od 2 do 4 ur",
+    "trainingProvided": "Usposabljanje za kompleksna orodja",
+    "confirmationEmail": "Potrjevalni e-mail je takoj poslan",
+    "bookingConfirmed": "Rezervacija je potrdjena! Preverite svojo e-pošto za podrobnosti.",
+    "bookingFailed": "Rezervacija je neuspešna",
+    "fillAllFields": "Prosimo, izpolnite vsa polja",
+    "trainingRequired": "Zahtevano usposabljanje",
+    "availableQty": "Dostopno"
+  }
+}

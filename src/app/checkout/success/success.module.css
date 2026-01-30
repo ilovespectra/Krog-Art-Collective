@@ -1,0 +1,120 @@
+.main {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+:global(.dark) .main {
+  background: #111;
+}
+
+.container {
+  max-width: 500px;
+  text-align: center;
+}
+
+.loading {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+:global(.dark) .loading {
+  color: #999;
+}
+
+.successIcon {
+  font-size: 5rem;
+  color: #22c55e;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+:global(.dark) .heading {
+  color: #fff;
+}
+
+.message {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+:global(.dark) .message {
+  color: #999;
+}
+
+.subMessage {
+  font-size: 0.95rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+:global(.dark) .subMessage {
+  color: #666;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+:global(.dark) .button {
+  background: #fff;
+  color: #000;
+}
+
+.button:hover {
+  background: #222;
+}
+
+:global(.dark) .button:hover {
+  background: #ddd;
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 1rem;
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+:global(.dark) .secondaryButton {
+  color: #fff;
+  border-color: #444;
+}
+
+.secondaryButton:hover {
+  background: #f0f0f0;
+}
+
+:global(.dark) .secondaryButton:hover {
+  background: #222;
+}

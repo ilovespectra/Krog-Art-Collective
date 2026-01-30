@@ -1,0 +1,271 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+}
+
+:global(.dark) .container {
+  background: #111;
+}
+
+.header {
+  background: #f3f4f6;
+  padding: 4rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+:global(.dark) .header {
+  background: #1a1a1a;
+  border-bottom-color: #333;
+}
+
+.headerContent {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem 0 1.5rem;
+}
+
+.headerTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .headerTop {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.headerLogo {
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+:global(.dark) .title {
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+:global(.dark) .subtitle {
+  color: #999;
+}
+
+.searchWrapper {
+  max-width: 42rem;
+}
+
+.content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  background: #f8f8f8;
+  border-radius: 0.5rem;
+}
+
+:global(.dark) .emptyState {
+  background: #1a1a1a;
+}
+
+.emptyText {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .emptyText {
+  color: #999;
+}
+
+.sortSection {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+:global(.dark) .sortSection {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.sortTitle {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+:global(.dark) .sortTitle {
+  color: #fff;
+}
+
+.sortSelect {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+:global(.dark) .sortSelect {
+  border-color: #444;
+  background: #222;
+  color: #fff;
+}
+
+.sortSelect:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+:global(.dark) .sortSelect:focus {
+  border-color: #666;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.resultsInfo {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .resultsInfo {
+  color: #999;
+}
+
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .itemsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .itemsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem;
+}
+
+.noResultsIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.noResultsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+:global(.dark) .noResultsTitle {
+  color: #fff;
+}
+
+.noResultsText {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .noResultsText {
+  color: #999;
+}
+
+.clearButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+:global(.dark) .clearButton {
+  background: #fff;
+  color: #000;
+}
+
+.clearButton:hover {
+  background: #222;
+}
+
+:global(.dark) .clearButton:hover {
+  background: #ddd;
+}

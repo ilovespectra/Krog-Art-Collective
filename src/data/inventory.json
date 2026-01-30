@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "paint-acrylic-set-1",
+      "name": "Premium Acrylic Paint Set",
+      "description": "24-color acrylic paint set with professional quality pigments",
+      "price": 24.99,
+      "category": "paints",
+      "image": "https://images.unsplash.com/photo-1561214115-6d2f1b0609fa?w=500&h=500&fit=crop",
+      "stock": 15,
+      "donated": true
+    },
+    {
+      "id": "brush-set-1",
+      "name": "Professional Brush Collection",
+      "description": "12-piece brush set with various sizes for painting and detail work",
+      "price": 18.99,
+      "category": "brushes",
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&h=500&fit=crop",
+      "stock": 8,
+      "donated": true
+    },
+    {
+      "id": "sketchbook-1",
+      "name": "Premium Sketching Pad",
+      "description": "200-page sketchbook with acid-free paper, 9x12 inches",
+      "price": 14.99,
+      "category": "surfaces",
+      "image": "https://images.unsplash.com/photo-1536681246227-ab8f2a7a6d18?w=500&h=500&fit=crop",
+      "stock": 12,
+      "donated": true
+    },
+    {
+      "id": "watercolor-set-1",
+      "name": "Watercolor Paint Set",
+      "description": "36-color watercolor set with professional-grade pigments",
+      "price": 32.99,
+      "category": "paints",
+      "image": "https://images.unsplash.com/photo-1561214115-6d2f1b0609fa?w=500&h=500&fit=crop&q=80&hue=200",
+      "stock": 6,
+      "donated": true
+    },
+    {
+      "id": "charcoal-set-1",
+      "name": "Charcoal Drawing Set",
+      "description": "Complete charcoal set with blending stumps and erasers",
+      "price": 19.99,
+      "category": "drawing",
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&h=500&fit=crop&q=80&sat=-80",
+      "stock": 10,
+      "donated": true
+    },
+    {
+      "id": "canvas-pack-1",
+      "name": "Canvas Pack (5 pieces)",
+      "description": "5x premium pre-stretched canvases, 11x14 inches each",
+      "price": 29.99,
+      "category": "surfaces",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop",
+      "stock": 7,
+      "donated": true
+    },
+    {
+      "id": "oil-paint-set-1",
+      "name": "Oil Paint Starter Set",
+      "description": "12-color oil paint set with linseed oil and brushes",
+      "price": 45.99,
+      "category": "paints",
+      "image": "https://images.unsplash.com/photo-1561914773-651e2deae4cd?w=500&h=500&fit=crop",
+      "stock": 4,
+      "donated": true
+    },
+    {
+      "id": "colored-pencils-1",
+      "name": "Professional Colored Pencil Set",
+      "description": "120-color pencil set for illustrations and fine art",
+      "price": 54.99,
+      "category": "drawing",
+      "image": "https://images.unsplash.com/photo-1533697268619-f184ca1fe3e6?w=500&h=500&fit=crop",
+      "stock": 3,
+      "donated": true
+    }
+  ]
+}

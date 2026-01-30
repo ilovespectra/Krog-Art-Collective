@@ -1,17 +1,26 @@
 {
-  "name": "temp",
+  "name": "krog-art-collective",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run kill-ports && next dev --webpack",
+    "dev:clean": "./dev.sh",
+    "kill-ports": "lsof -ti:3000 | xargs kill -9 2>/dev/null || true && lsof -ti:3001 | xargs kill -9 2>/dev/null || true && lsof -ti:3002 | xargs kill -9 2>/dev/null || true",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "axios": "^1.7.0",
+    "date-fns": "^4.1.0",
     "next": "16.1.4",
+    "next-i18next": "^15.3.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-big-calendar": "^1.19.4",
+    "react-calendar": "^6.0.0",
+    "react-dom": "19.2.3",
+    "zod": "^4.3.6",
+    "zustand": "^4.5.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

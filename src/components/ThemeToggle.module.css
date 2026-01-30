@@ -1,0 +1,40 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: rgba(212, 105, 61, 0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #d4693d;
+}
+
+:global(.dark) .button {
+  background: rgba(232, 149, 106, 0.15);
+  color: #e8956a;
+}
+
+.button:hover {
+  background: rgba(212, 105, 61, 0.15);
+}
+
+:global(.dark) .button:hover {
+  background: rgba(232, 149, 106, 0.2);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.moonIcon {
+  color: #f5deb3;
+}
+
+.sunIcon {
+  color: #fdbf60;
+}
