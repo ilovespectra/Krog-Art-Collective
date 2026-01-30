@@ -27,7 +27,7 @@ export default function DonatePage() {
     e.preventDefault();
 
     if (!donorName || !donorEmail || !donorPhone) {
-      setMessage(Array.isArray(t('donate.fillRequired')) ? t('donate.fillRequired')[0] : t('donate.fillRequired'));
+      setMessage(String(t('donate.fillRequired')));
       return;
     }
 
@@ -69,7 +69,7 @@ export default function DonatePage() {
       localStorage.setItem('donations', JSON.stringify(donations));
 
       // Show success message
-      setMessage(t('donate.successMessage'));
+      setMessage(String(t('donate.successMessage')));
       // Reset form
       setDonorName('');
       setDonorEmail('');
@@ -80,7 +80,7 @@ export default function DonatePage() {
       setMonetaryAmount('');
       setTimeout(() => setMessage(''), 6000);
     } catch (error) {
-      setMessage(t('donate.errorMessage'));
+      setMessage(String(t('donate.errorMessage')));
       console.error('Donation error:', error);
     } finally {
       setLoading(false);
@@ -91,9 +91,9 @@ export default function DonatePage() {
     <main className={styles.main}>
       <div className={styles.container}>
         <h1 className={styles.heading}>
-          {t('donate.heading').split(' ').slice(0, 2).join(' ')}
+          {String(t('donate.heading')).split(' ').slice(0, 2).join(' ')}
           <br />
-          {t('donate.heading').split(' ').slice(2).join(' ')}
+          {String(t('donate.heading')).split(' ').slice(2).join(' ')}
         </h1>
         <p className={styles.subtitle}>
           {t('donate.subtitle')}
@@ -180,7 +180,7 @@ export default function DonatePage() {
                     onChange={(e) => setItems(e.target.value)}
                     className={styles.textarea}
                     rows={3}
-                    placeholder={t('donate.suppliesPlaceholder')}
+                    placeholder={String(t('donate.suppliesPlaceholder'))}
                   />
                 </div>
               )}
@@ -212,7 +212,7 @@ export default function DonatePage() {
                       value={toolName}
                       onChange={(e) => setToolName(e.target.value)}
                       className={styles.input}
-                      placeholder={t('donate.toolPlaceholder')}
+                      placeholder={String(t('donate.toolPlaceholder'))}
                     />
                   </div>
                   <div className={styles.formGroup}>
@@ -296,7 +296,7 @@ export default function DonatePage() {
                   onChange={(e) => setPickupNotes(e.target.value)}
                   className={styles.textarea}
                   rows={3}
-                  placeholder={t('donate.pickupNotes')}
+                  placeholder={String(t('donate.pickupNotes'))}
                   style={{ marginTop: '1rem' }}
                 />
               )}
