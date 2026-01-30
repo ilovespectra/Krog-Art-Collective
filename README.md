@@ -8,7 +8,7 @@ A modern, creative web application for Krog Art Collective - a community-driven 
 - **Semantic Search**: Search art supplies by description with intelligent similarity scoring
 - **Category Browsing**: Filter supplies by type (Paints, Drawing, Surfaces, Brushes, Specialty)
 - **Shopping Cart**: Add items to cart with quantity management
-- **Inventory Management**: Track donated supplies with condition ratings
+- **Inventory Display**: Browse donated supplies with condition ratings and pricing
 
 ### User Experience
 - **Dark/Light Theme Toggle**: User preference persistence with local storage
@@ -23,19 +23,22 @@ A modern, creative web application for Krog Art Collective - a community-driven 
 - **About** (`/about`): Mission statement, values, and community impact
 - **Contact** (`/contact`): Contact information and donation requests
 - **Cart** (`/cart`): Shopping cart with checkout preview
-- **POS System** (`/pos`): Placeholder for future point-of-sale implementation
+- **Join** (`/join`): Membership application for Kolektiv Krog
 
 ## 🏗️ Project Structure
 
 ```
 src/
 ├── app/                    # Next.js App Router pages
+│   ├── api/               # API routes (contact, join forms)
 │   ├── layout.tsx         # Root layout with header/footer
 │   ├── page.tsx           # Home/browse page
 │   ├── about/
 │   ├── contact/
 │   ├── cart/
-│   ├── pos/
+│   ├── tools/
+│   ├── donate/
+│   ├── join/
 │   └── globals.css        # Global styles
 ├── components/            # Reusable React components
 │   ├── Header.tsx
@@ -55,7 +58,7 @@ src/
 ├── types/                 # TypeScript type definitions
 │   └── inventory.ts       # Inventory and cart types
 ├── data/                  # Static data
-│   └── inventory.ts       # 40+ art supply items mock data
+│   └── inventory.ts       # Art supply items (manually maintained)
 └── utils/                 # Utility functions
     └── search.ts          # Semantic search & filtering logic
 ```
@@ -82,7 +85,6 @@ Each item includes:
 
 ### Prerequisites
 - Node.js 18+ (npm/yarn/pnpm)
-- MongoDB 4.4+ (for backend - local or Atlas)
 
 ### Installation
 
@@ -90,36 +92,14 @@ Each item includes:
 # Clone the repository
 cd /Users/tanny/Documents/github/Krog-Art-Collective
 
-# Install frontend dependencies
-npm install
-
-# Start frontend development server
-npm run dev
-```
-
-The frontend will be available at [http://localhost:3000](http://localhost:3000)
-
-### Backend Setup
-
-```bash
-cd backend
-
 # Install dependencies
 npm install
 
-# Create .env file
-cp .env.example .env
-
-# Edit .env with your MongoDB connection and settings
-
-# Seed database with 10 tools
-npm run seed
-
-# Start backend development server
+# Start development server
 npm run dev
 ```
 
-The backend API will be available at [http://localhost:5000](http://localhost:5000)
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
 ## 📦 Build & Deployment
 
@@ -137,19 +117,11 @@ npm run lint     # Run ESLint
 
 ## 🔧 Technology Stack
 
-### Frontend
 - **Framework**: Next.js 16 with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
 - **State Management**: Zustand
 - **Internationalization**: Custom i18n implementation (en/sl)
-
-### Backend
-- **Framework**: Express.js 4.18
-- **Database**: MongoDB 8.0 with Mongoose
-- **Language**: TypeScript
-- **Authentication**: JWT + bcryptjs
-- **API Features**: CORS, JSON parsing, error handling
 
 ### Development
 - **Build**: Turbopack (2.1s)
@@ -178,7 +150,7 @@ The semantic search uses text similarity scoring across:
 - Subcategory (15% weight)
 
 **Note**: The current implementation uses simple similarity scoring. For production, integrate with:
-- CLIP embeddings from Python backend
+- CLIP embeddings from machine learning service
 - Vector database (Pinecone, Weaviate, Milvus)
 - Proper image embedding pipeline
 
@@ -206,6 +178,16 @@ const { locale, setLanguage } = useLanguage();
 const { items, total, addItem, removeItem } = useCart();
 ```
 
+## 📝 Inventory Management
+
+Currently, inventory is manually maintained in `src/data/inventory.ts`. To update inventory:
+
+1. Edit the `inventory.ts` file directly
+2. Add or modify items with required fields (name, description, price, quantity, condition, etc.)
+3. Redeploy the application
+
+As demand grows and the inventory scales, a proper database and admin dashboard will be implemented.
+
 ## 🎨 Design System
 
 ### Colors
@@ -224,17 +206,16 @@ const { items, total, addItem, removeItem } = useCart();
 
 ### Immediate Priorities
 1. Integrate CLIP embeddings for image-based search
-2. Connect to backend database (local MongoDB/PostgreSQL)
-3. Implement user authentication
-4. Add product detail pages with images
-5. Enhance POS system with barcode scanning
-6. Payment integration (Stripe, PayPal)
+2. Implement user authentication
+3. Add product detail pages with images
+4. Payment integration (Stripe, PayPal)
+5. Enhance Tool Library booking system
 
-### Advanced Features
-1. Real-time inventory sync with backend
-2. Donation submission form with image uploads
-3. Admin dashboard for inventory management
-4. Analytics and sales reporting
+### Advanced Features (When Demand Requires)
+1. Backend database and admin inventory management system
+2. Real-time inventory sync
+3. Donation submission form with image uploads
+4. Admin dashboard for inventory and analytics
 5. User accounts with order history
 6. Community forum/gallery
 7. Integration with local art initiatives
