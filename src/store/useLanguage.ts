@@ -10,7 +10,7 @@ interface LanguageStore {
 export const useLanguage = create<LanguageStore>()(
   persist(
     (set) => ({
-      locale: 'en',
+      locale: 'sl',
       toggleLanguage: () =>
         set((state) => ({ locale: state.locale === 'en' ? 'sl' : 'en' })),
       setLanguage: (locale: 'en' | 'sl') => set({ locale }),
