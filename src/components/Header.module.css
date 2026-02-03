@@ -166,3 +166,84 @@
   transform: translate(50%, -50%);
   line-height: 1;
 }
+
+.menuButton {
+  display: none;
+  padding: 0.5rem;
+  color: #5a4a3a;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+:global(.dark) .menuButton {
+  color: #c4b5a0;
+}
+
+.menuButton:hover {
+  color: #d4693d;
+}
+
+:global(.dark) .menuButton:hover {
+  color: #e8956a;
+}
+
+.menuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  background: #faf7f2;
+  border-bottom: 1px solid #d4c8b8;
+  flex-direction: column;
+  padding: 1rem 0;
+  z-index: 30;
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+
+:global(.dark) .mobileMenu {
+  background: #1a1410;
+  border-bottom-color: #5a4a3a;
+}
+
+.mobileNavLink {
+  padding: 0.75rem 1rem;
+  color: #5a4a3a;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: #f0ebe2;
+    color: #d4693d;
+    border-left-color: #d4693d;
+  }
+}
+
+:global(.dark) .mobileNavLink {
+  color: #c4b5a0;
+
+  &:hover {
+    background: #2c2416;
+    color: #e8956a;
+    border-left-color: #e8956a;
+  }
+}
+

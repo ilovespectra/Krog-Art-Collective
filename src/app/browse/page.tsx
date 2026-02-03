@@ -13,6 +13,7 @@ export default function BrowsePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<InventoryCategory | null>(null);
   const [sortBy, setSortBy] = useState<'price-low' | 'price-high' | 'newest'>('newest');
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const filteredItems = useMemo(() => {
     let items = inventoryCache;
@@ -53,7 +54,15 @@ export default function BrowsePage() {
       </div>
 
       <div className={styles.content}>
-        <aside className={styles.sidebar}>
+        <button 
+          className={styles.filterToggle}
+          onClick={() => setFiltersOpen(!filtersOpen)}
+          aria-label="Toggle filters"
+        >
+          {filtersOpen ? '✕ Hide Filters' : '☰ Show Filters'}
+        </button>
+        
+        <aside className={`${styles.sidebar} ${filtersOpen ? styles.sidebarOpen : ''}`}>
           <div className={styles.filterSection}>
             <h3 className={styles.filterTitle}>Categories</h3>
             <CategoryFilter selected={selectedCategory} onSelect={setSelectedCategory} />

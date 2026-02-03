@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -11,6 +12,7 @@ import styles from './Header.module.css';
 export default function Header() {
   const { t } = useTranslation();
   const { items } = useCart();
+  const [menuOpen, setMenuOpen] = useState(false);
   const cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -74,8 +76,62 @@ export default function Header() {
                 </span>
               )}
             </Link>
+
+            {/* Mobile Menu Button */}
+            <button
+              className={styles.menuButton}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg
+                className={styles.menuIcon}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {menuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <nav className={styles.mobileMenu}>
+            <Link href="/" className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+              {t('nav.browse')}
+            </Link>
+            <Link href="/tools" className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+              {t('nav.tools')}
+            </Link>
+            <Link href="/donate" className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+              {t('nav.donate')}
+            </Link>
+            <Link href="/join" className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+              {t('nav.join')}
+            </Link>
+            <Link href="/about" className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+              {t('nav.about')}
+            </Link>
+            <Link href="/contact" className={styles.mobileNavLink} onClick={() => setMenuOpen(false)}>
+              {t('nav.contact')}
+            </Link>
+          </nav>
+        )}
       </div>
     </header>
   );

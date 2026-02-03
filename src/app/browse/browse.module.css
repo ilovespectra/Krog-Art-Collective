@@ -66,10 +66,52 @@
   }
 }
 
+.filterToggle {
+  display: none;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background: #d4693d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
+  &:hover {
+    background: #c25535;
+  }
+}
+
+:global(.dark) .filterToggle {
+  background: #e8956a;
+  color: #1a1410;
+
+  &:hover {
+    background: #f0a680;
+  }
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.sidebarOpen {
+  @media (max-width: 1024px) {
+    display: flex;
+  }
 }
 
 .filterSection,

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslation } from '@/hooks/useTranslation';
 import styles from './SearchBar.module.css';
 
 interface SearchBarProps {
@@ -10,6 +11,7 @@ interface SearchBarProps {
 
 export default function SearchBar({ onSearch, placeholder }: SearchBarProps) {
   const [query, setQuery] = useState('');
+  const { t } = useTranslation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,7 +32,7 @@ export default function SearchBar({ onSearch, placeholder }: SearchBarProps) {
               onSearch('');
             }
           }}
-          placeholder={placeholder || 'Search supplies...'}
+          placeholder={placeholder || t('header.search')}
           className={styles.input}
         />
         <button
