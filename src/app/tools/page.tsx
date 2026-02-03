@@ -17,21 +17,21 @@ export default function ToolsPage() {
           <h1 className={styles.title} style={{ marginBottom: '1rem' }}>
             {t('tools.coming_soon')}
           </h1>
-          <p style={{ fontSize: '1.125rem', color: '#666', marginBottom: '1rem', lineHeight: '1.6' }}>
+          <p style={{ fontSize: '1.125rem', color: '#5a4a3a', marginBottom: '1rem', lineHeight: '1.6' }}>
             {t('tools.acquiring_tools')}
           </p>
-          <p style={{ fontSize: '1.125rem', color: '#666', marginBottom: '2rem', lineHeight: '1.6' }}>
+          <p style={{ fontSize: '1.125rem', color: '#5a4a3a', marginBottom: '2rem', lineHeight: '1.6' }}>
             {t('tools.membership_access')}
           </p>
           
           {/* Tools List */}
           <div style={{ marginBottom: '2rem', textAlign: 'left', maxWidth: '600px', margin: '0 auto 2rem' }}>
-            <p style={{ fontSize: '1.125rem', fontWeight: 600, color: '#333', marginBottom: '1rem' }}>
+            <p style={{ fontSize: '1.125rem', fontWeight: 600, color: '#2c2416', marginBottom: '1rem' }}>
               {t('tools.tools_we_seek')}
             </p>
             <ul style={{ listStyle: 'none', padding: 0 }}>
               {artTools.map((tool) => (
-                <li key={tool} style={{ fontSize: '1rem', color: '#666', padding: '0.5rem 0', paddingLeft: '1.5rem', position: 'relative' }}>
+                <li key={tool} style={{ fontSize: '1rem', color: '#5a4a3a', padding: '0.5rem 0', paddingLeft: '1.5rem', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: 0 }}>•</span>
                   {tool}
                 </li>
@@ -39,8 +39,8 @@ export default function ToolsPage() {
             </ul>
           </div>
 
-          <p style={{ fontSize: '1rem', color: '#999' }}>
-            {t('tools.join_community')} <a href="/join" style={{ color: '#a855f7', textDecoration: 'none', fontWeight: 600 }}>{t('tools.joinLink')}</a>
+          <p style={{ fontSize: '1rem', color: '#8b7355' }}>
+            {t('tools.join_community')} <a href="/join" style={{ color: '#d4693d', textDecoration: 'none', fontWeight: 600 }}>{t('tools.joinLink')}</a>
           </p>
         </div>
       </div>

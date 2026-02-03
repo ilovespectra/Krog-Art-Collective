@@ -1,11 +1,14 @@
 .container {
   min-height: 100vh;
-  background: #fff;
+  background: #faf7f2;
+  color: #2c2416;
   padding: 3rem 1rem;
+  transition: all 0.3s ease;
 }
 
 :global(.dark) .container {
-  background: #0a0a0a;
+  background: #1a1410;
+  color: #ede8e0;
 }
 
 .wrapper {
@@ -43,12 +46,12 @@
 .title {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 2rem;
 }
 
 :global(.dark) .title {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .section {
@@ -58,21 +61,21 @@
 .sectionTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 1rem;
 }
 
 :global(.dark) .sectionTitle {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .sectionText {
-  color: #444;
+  color: #5a4a3a;
   line-height: 1.8;
 }
 
 :global(.dark) .sectionText {
-  color: #ccc;
+  color: #c4b5a0;
 }
 
 .valuesGrid {
@@ -89,68 +92,72 @@
 }
 
 .valueCard {
-  background: #f3f3f3;
+  background: #f5f1e8;
   padding: 1.5rem;
   border-radius: 0.5rem;
+  border: 1px solid #d4c8b8;
 }
 
 :global(.dark) .valueCard {
-  background: #222;
+  background: #2c2416;
+  border-color: #5a4a3a;
 }
 
 .valueTitle {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 0.5rem;
 }
 
 :global(.dark) .valueTitle {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .valueText {
-  color: #444;
+  color: #5a4a3a;
 }
 
 :global(.dark) .valueText {
-  color: #ccc;
+  color: #c4b5a0;
 }
 
 .ctaSection {
-  background: #f3f3f3;
+  background: #f5f1e8;
   padding: 2rem;
   border-radius: 0.5rem;
+  border: 1px solid #d4c8b8;
 }
 
 :global(.dark) .ctaSection {
-  background: #222;
+  background: #2c2416;
+  border-color: #5a4a3a;
 }
 
 .ctaTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 1rem;
 }
 
 :global(.dark) .ctaTitle {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .ctaText {
-  color: #444;
+  color: #5a4a3a;
   margin-bottom: 1.5rem;
 }
 
 :global(.dark) .ctaText {
-  color: #ccc;
+  color: #c4b5a0;
 }
 
 .ctaLink {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: #000;
+  background: #d4693d;
   color: #fff;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -159,14 +166,15 @@
 }
 
 :global(.dark) .ctaLink {
-  background: #fff;
-  color: #000;
+  background: #e8956a;
+  color: #1a1410;
 }
 
 .ctaLink:hover {
-  background: #222;
+  background: #c25535;
 }
 
 :global(.dark) .ctaLink:hover {
+  background: #f0a680;
   background: #ddd;
 }

@@ -1,11 +1,14 @@
 .container {
   min-height: 100vh;
-  background: #fff;
+  background: #faf7f2;
+  color: #2c2416;
   padding: 3rem 1rem;
+  transition: all 0.3s ease;
 }
 
 :global(.dark) .container {
-  background: #0a0a0a;
+  background: #1a1410;
+  color: #ede8e0;
 }
 
 .wrapper {
@@ -29,12 +32,12 @@
 .title {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 2rem;
 }
 
 :global(.dark) .title {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .grid {
@@ -57,12 +60,12 @@
 .sectionTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 1.5rem;
 }
 
 :global(.dark) .sectionTitle {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .contactItems {
@@ -77,29 +80,29 @@
 
 .contactLabel {
   font-weight: 600;
-  color: #111;
+  color: #2c2416;
   margin-bottom: 0.5rem;
 }
 
 :global(.dark) .contactLabel {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .contactValue {
-  color: #666;
+  color: #5a4a3a;
 }
 
 :global(.dark) .contactValue {
-  color: #999;
+  color: #c4b5a0;
 }
 
 .emailLink {
-  color: #a78bfa;
+  color: #d4693d;
   text-decoration: none;
 }
 
 :global(.dark) .emailLink {
-  color: #c4b5fd;
+  color: #e8956a;
 }
 
 .emailLink:hover {
@@ -110,11 +113,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  color: #444;
+  color: #5a4a3a;
 }
 
 :global(.dark) .reasonsList {
-  color: #ccc;
+  color: #c4b5a0;
 }
 
 .reasonItem {

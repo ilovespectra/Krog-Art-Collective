@@ -1,13 +1,14 @@
 .container {
   min-height: 100vh;
-  background: #ffffff;
+  background: #faf7f2;
+  color: #2c2416;
   padding: 3rem 1rem;
-  color: #000;
+  transition: all 0.3s ease;
 }
 
 :global(.dark) .container {
-  background: #111;
-  color: #fff;
+  background: #1a1410;
+  color: #ede8e0;
 }
 
 .content {
@@ -18,24 +19,24 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
+  color: #2c2416;
   margin: 0 0 0.5rem 0;
   letter-spacing: -0.02em;
 }
 
 :global(.dark) .title {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .subtitle {
   font-size: 1.125rem;
-  color: #666;
+  color: #5a4a3a;
   margin: 0 0 2rem 0;
   font-weight: 400;
 }
 
 :global(.dark) .subtitle {
-  color: #999;
+  color: #c4b5a0;
 }
 
 .message {
@@ -69,26 +70,26 @@
 }
 
 .section {
-  background: #f8f8f8;
-  border: 1px solid #e5e5e5;
+  background: #f5f1e8;
+  border: 1px solid #d4c8b8;
   border-radius: 12px;
   padding: 2rem;
 }
 
 :global(.dark) .section {
-  background: #222;
-  border-color: #333;
+  background: #2c2416;
+  border-color: #5a4a3a;
 }
 
 .sectionTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #000;
+  color: #2c2416;
   margin: 0 0 1.5rem 0;
 }
 
 :global(.dark) .sectionTitle {
-  color: #fff;
+  color: #ede8e0;
 }
 
 .toolsGrid {
