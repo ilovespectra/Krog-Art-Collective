@@ -29,8 +29,7 @@ Message:
 ${message}
     `;
 
-    // Return the email content and redirect info
-    // User will open their email client with pre-filled information
+    // Return the mailto link that opens the user's email client
     const mailtoLink = `mailto:join@kolektivkrog.si?subject=New membership request from ${encodeURIComponent(nickname)}&body=${encodeURIComponent(emailContent)}&reply-to=${encodeURIComponent(email)}`;
 
     return Response.json({ 

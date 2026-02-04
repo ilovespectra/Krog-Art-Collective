@@ -56,8 +56,10 @@ export default function JoinPage() {
 
       const data = await response.json();
 
-      if (response.ok) {
-        setStatusMessage('✅ Thank you! We\'ll be in touch soon.');
+      if (response.ok && data.mailtoLink) {
+        // Open the mailto link in the user's email client
+        window.location.href = data.mailtoLink;
+        setStatusMessage('✅ Opening your email client...');
         setNickname('');
         setEmail('');
         setPhone('');
