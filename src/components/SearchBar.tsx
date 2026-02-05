@@ -32,7 +32,7 @@ export default function SearchBar({ onSearch, placeholder }: SearchBarProps) {
               onSearch('');
             }
           }}
-          placeholder={placeholder || t('header.search')}
+          placeholder={placeholder || String(t('header.search'))}
           className={styles.input}
         />
         <button

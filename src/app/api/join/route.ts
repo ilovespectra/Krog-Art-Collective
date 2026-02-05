@@ -1,3 +1,7 @@
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export async function POST(request: Request) {
   try {
     const { nickname, email, phone, mediums, tools, message } = await request.json();
@@ -29,12 +33,28 @@ Message:
 ${message}
     `;
 
-    // Return the mailto link that opens the user's email client
-    const mailtoLink = `mailto:join@kolektivkrog.si?subject=New membership request from ${encodeURIComponent(nickname)}&body=${encodeURIComponent(emailContent)}&reply-to=${encodeURIComponent(email)}`;
+    // Send email using Resend
+    const result = await resend.emails.send({
+      from: 'hello@kolektivkrog.si',
+      to: 'join@kolektivkrog.si',
+      replyTo: email,
+      subject: `New membership request from ${nickname}`,
+      text: emailContent,
+    });
+
+    if (result.error) {
+      console.error('Email send error:', result.error);
+      return Response.json(
+        { error: `Email service error: ${result.error.message || 'Unknown error'}` },
+        { status: 500 }
+      );
+    }
+
+    console.log('Email sent successfully:', result.id);
 
     return Response.json({ 
       success: true,
-      mailtoLink: mailtoLink
+      message: 'Your membership request has been sent successfully!'
     });
   } catch (error) {
     console.error('Join submission error:', error);

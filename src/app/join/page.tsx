@@ -56,17 +56,14 @@ export default function JoinPage() {
 
       const data = await response.json();
 
-      if (response.ok && data.mailtoLink) {
-        // Open the mailto link in the user's email client
-        window.location.href = data.mailtoLink;
-        setStatusMessage('✅ Opening your email client...');
+      if (response.ok) {
+        setStatusMessage('✅ Thank you! Your membership request has been sent. We\'ll be in touch soon.');
         setNickname('');
         setEmail('');
         setPhone('');
         setSelectedMediums([]);
         setSelectedTools([]);
         setMessage(String(t('join.defaultMessage')));
-        setTimeout(() => setStatusMessage(''), 5000);
       } else {
         setStatusMessage(`❌ ${data.error || 'Failed to submit. Please try again.'}`);
       }
