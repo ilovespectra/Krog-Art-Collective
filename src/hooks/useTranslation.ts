@@ -167,6 +167,8 @@ const enTranslations = {
     message: 'Tell us about yourself',
     defaultMessage: 'I\'m an artist interested in joining Kolektiv Krog.',
     submitButton: 'Join Kolektiv Krog',
+    successMessage: '✅ Thank you! Your membership request has been sent. We\'ll be in touch soon.',
+    errorMessage: '❌ Failed to submit. Please try again.',
     mediums: [
       'Painting (acrylic, oil, watercolor)',
       'Drawing (pencil, charcoal, ink)',
@@ -459,6 +461,8 @@ const slTranslations = {
     message: 'Povejte nam o sebi',
     defaultMessage: 'Sem umetnik/umetnica, zainteresiran/a za pristop k Kolektiv Krog.',
     submitButton: 'Pridruži se Kolektiv Krog',
+    successMessage: '✅ Hvala! Vaša zahteva za članstvo je bila poslana. Kmalu vas bomo kontaktirali.',
+    errorMessage: '❌ Pošiljanje je bilo neuspešno. Poskusite ponovno.',
     mediums: [
       'Slikarstvo (akril, olje, akvarela)',
       'Risanje (svinčnik, oglje, črnilo)',

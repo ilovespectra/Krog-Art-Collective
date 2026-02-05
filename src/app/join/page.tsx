@@ -57,7 +57,7 @@ export default function JoinPage() {
       const data = await response.json();
 
       if (response.ok) {
-        setStatusMessage('✅ Thank you! Your membership request has been sent. We\'ll be in touch soon.');
+        setStatusMessage(String(t('join.successMessage')));
         setNickname('');
         setEmail('');
         setPhone('');
@@ -65,10 +65,10 @@ export default function JoinPage() {
         setSelectedTools([]);
         setMessage(String(t('join.defaultMessage')));
       } else {
-        setStatusMessage(`❌ ${data.error || 'Failed to submit. Please try again.'}`);
+        setStatusMessage(`${data.error || t('join.errorMessage')}`);
       }
     } catch (error) {
-      setStatusMessage('❌ An error occurred. Please try again.');
+      setStatusMessage(String(t('join.errorMessage')));
       console.error('Join error:', error);
     } finally {
       setLoading(false);
