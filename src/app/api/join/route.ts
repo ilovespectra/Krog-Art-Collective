@@ -50,7 +50,7 @@ ${message}
       );
     }
 
-    console.log('Email sent successfully:', result.id);
+    console.log('Email sent successfully:', result.data?.id);
 
     return Response.json({ 
       success: true,
