@@ -23,7 +23,7 @@ A modern, creative web application for Krog Art Collective - a community-driven 
 - **About** (`/about`): Mission statement, values, and community impact
 - **Contact** (`/contact`): Contact information and donation requests
 - **Cart** (`/cart`): Shopping cart with checkout preview
-- **Join** (`/join`): Membership application for Kolektiv Krog
+- **Join** (`/join`): Membership application for Kolektiv Krog 
 
 ## 🏗️ Project Structure
 
